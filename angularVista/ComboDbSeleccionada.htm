@@ -1,0 +1,25 @@
+ 
+ 
+<form class="form-inline">
+  
+ 
+    <div class="form-group">
+    
+        
+<Select ng-model= '$parent.dbServerSource'  ng-change='SeleccionServerSource()' class="form-control"  id="ServerSource" >
+		<option ng-repeat= 'x in servers' value= '{{x.id}}' >
+			 {{x.descripcion}} 
+		</option>
+	</Select>
+	 
+<Select ng-model= '$parent.dbSeleccionada' ng-change='SelecciondbChange()' class="form-control">
+		<option ng-repeat= 'x in datos' >
+			 {{x.db}} 
+		</option>
+</Select>
+  
+    </div>
+  
+</form>
+
+ 

@@ -1,0 +1,7 @@
+<div class="row">
+   <Select ng-model= 'dbServerSource'  ng-change='SeleccionServerSource()' class="form-control"  id="ServerSource" >
+		<option ng-repeat= 'x in servers' value= '{{x.id}}' >
+			 {{x.descripcion}} 
+		</option>
+   </Select>
+   </div>
